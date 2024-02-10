@@ -87,12 +87,15 @@ function MusicaFondo() {
       </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-image u-section-2"
+
+
+
+	      <section class="u-align-center u-clearfix u-image u-section-2"
       id="sec-f8c3">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-countdown u-custom-color-88 u-radius-17 u-countdown-1"
           id="countdown"
-          data-target-date="May 3, 2024 16:00:00 GMT-0600"
+          data-target-date="July 6, 2024 16:00:00 GMT-0600"
           data-time-left="750m"
           data-redirect-url="https://">
           <div class="u-countdown-wrapper u-spacing-12">
@@ -124,31 +127,45 @@ function MusicaFondo() {
     </section>
 
     <script>
-    const targetDate = new Date('May 3, 2024 14:00:00 GMT-0600');
-  
-    function updateCountdown() {
-      const currentDate = new Date();
-      const timeLeft = targetDate - currentDate;
-  
-      if (timeLeft > 0) {
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-  
-        document.querySelector('#countdown .u-countdown-counter-2').textContent = days;
-        document.querySelector('#countdown .u-countdown-counter-3').textContent = hours;
-        document.querySelector('#countdown .u-countdown-counter-4').textContent = minutes;
-        document.querySelector('#countdown .u-countdown-counter-5').textContent = seconds;
-      } else {
-        document.querySelector('#countdown').classList.add('u-hidden');
-        document.querySelector('#countdown .u-countdown-message').classList.remove('u-hidden');
+      const targetDate = new Date('July 6, 2024 15:00:00 GMT-0600');
+    
+      function updateCountdown() {
+        const currentDate = new Date();
+        const timeLeft = targetDate - currentDate;
+    
+        if (timeLeft > 0) {
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+          document.querySelector('#countdown .u-countdown-counter-2').textContent = days;
+          document.querySelector('#countdown .u-countdown-counter-3').textContent = hours;
+          document.querySelector('#countdown .u-countdown-counter-4').textContent = minutes;
+          document.querySelector('#countdown .u-countdown-counter-5').textContent = seconds;
+        } else {
+          document.querySelector('#countdown').classList.add('u-hidden');
+          document.querySelector('#countdown .u-countdown-message').classList.remove('u-hidden');
+        }
       }
-    }
-  
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+    
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
 
     <section class="u-align-center u-clearfix u-image u-section-3" src
       data-image-width="1080" data-image-height="1920" id="sec-a9e6">
